@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 
-import { Home } from './';
+import { Home, List, Form } from './';
 
 const Body = () => {
 
@@ -12,9 +12,9 @@ const Body = () => {
       switch (currentTab?.type) {
         case 'list':
             // Return your components here, based on type
-            return 'List Component';
+            return <List />;
         case 'form':
-            return 'Form Component';
+            return <Form />;
         default:
             return <Home />;
       }

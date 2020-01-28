@@ -1,11 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Home = () => {
-    return (
-        <React.Fragment>
-            <h1> Welcome to React Tabs App! </h1>
-        </React.Fragment>
-    );
-}
+const Home = () => (
+    <Heading> 
+        Welcome to React Tabs Boilerplate! 
+    </Heading>
+)
 
 export default Home;
+
+const Heading = styled.h1`
+    color: #666;
+`
